@@ -103,12 +103,12 @@ def visualize_auco_curve(args: Namespace):
     title = f'{args.print_name[args.data_name]} {args.uncertainty_type.title()} Uncertainty'
 
     plt.title(title, fontsize=20)
-    plt.legend(fontsize=23)
+    plt.legend(fontsize=23, loc='lower left')
 
     args.fig_output_path = os.path.join(f'figures',
-                                        f'Uncertainty calibration curves for regression datasets',
+                                        f'Uncertainty_calibration_curves_for_regression_datasets',
                                         f'AUCO',
-                                        f'{title}.JPG')
+                                        f'{args.print_name[args.data_name]}_{args.uncertainty_type.title()}_Uncertainty.JPG')
 
     os.makedirs(os.path.dirname(args.fig_output_path), exist_ok=True)
 
@@ -193,9 +193,9 @@ def visualize_auce_curve(args: Namespace):
     plt.legend(fontsize=23)
 
     args.fig_output_path = os.path.join(f'figures',
-                                        f'Uncertainty calibration curves for regression datasets',
+                                        f'Uncertainty_calibration_curves_for_regression_datasets',
                                         f'AUCE',
-                                        f'{title}.JPG')
+                                        f'{args.print_name[args.data_name]}_{args.uncertainty_type.title()}_Uncertainty.JPG')
     os.makedirs(os.path.dirname(args.fig_output_path), exist_ok=True)
 
     plt.savefig(args.fig_output_path, bbox_inches='tight', dpi=600)
@@ -276,9 +276,9 @@ def visualize_ence_points(args: Namespace):
     print(f'Perforamce Improvement {round((BayesMPP_ence - CPBayesMPP_ence) / BayesMPP_ence * 100, args.decimal_places)}%')
 
     args.fig_output_path = os.path.join(f'figures',
-                                        f'Uncertainty calibration curves for regression datasets',
+                                        f'Uncertainty_calibration_curves_for_regression_datasets',
                                         f'ENCE',
-                                        f'{title}.JPG')
+                                        f'{args.print_name[args.data_name]}_{args.uncertainty_type.title()}_Uncertainty.JPG')
     os.makedirs(os.path.dirname(args.fig_output_path), exist_ok=True)
 
     plt.savefig(args.fig_output_path, bbox_inches='tight', dpi=600)
@@ -379,7 +379,7 @@ def visualize_ece_curve(args: Namespace):
     plt.title(title, fontsize=20)
 
     args.fig_output_path = os.path.join(f'figures',
-                                        f'Uncertainty calibration curves for classification datasets',
+                                        f'Uncertainty_calibration_curves_for_classification_datasets',
                                         f'{title}.JPG')
     os.makedirs(os.path.dirname(args.fig_output_path), exist_ok=True)
 

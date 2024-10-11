@@ -7,7 +7,7 @@ Neural Network (BNN).
 
 The overview of CPBayesMPP is shown as following:
 
-![Alts](figures/The%20framework%20of%20proposed%20CPBayesMPP/The%20framework%20of%20proposed%20CPBayesMPP.jpg)
+![Alts](figures/The_framework_of_proposed_CPBayesMPP/The_framework_of_proposed_CPBayesMPP.JPG)
 
 CPBayesMPP contains two main stages:
 
@@ -62,7 +62,7 @@ The main library versions are as follows:
 
 ## Checkpoints
 
-- All the results reported in the paper are derived from experiments using the following checkpoints, which can be reproduced by the scripts in Stage (b) and Stage (c).
+- All the (pretrain / downstream) results reported in the paper are derived from experiments using the following checkpoints, which can be reproduced by the scripts in Stage (a), Stage (b) and Stage (c).
 - Please download the checkpoints <u>[here]()</u>, and place in the project as directory `/result`.
 - **⭐ Note: Before performing each of the following experiments, please carefully check the corresponding hyperparameter settings provided in the checkpoints.**
 
@@ -155,13 +155,13 @@ in predictive performance (RMSE/AUC-ROC).
 
 <b>Performance comparison (RMSE, the lower the better) of different methods on 6 regression datasets</b>
 
-| ![Alts](figures/RMSE%20comparison%20on%206%20regression%20datasets/RMSE%20comparison%20on%206%20regression%20datasets.JPG) |
-|----------------------------------------------------------------------------------------------------------------------------|
+| ![Alts](figures/RMSE_comparison_on_6_regression_datasets/RMSE_comparison_on_6_regression_datasets.JPG) |
+|-------------------------------------------------------------|
 
 <b>Performance comparison (AUC-ROC, the higher the better) of different methods on 6 classification datasets</b>
 
-| ![Alts](figures/AUC-ROC%20comparison%20on%206%20classification%20datasets/AUC-ROC%20comparison%20on%206%20classification%20datasets.JPG) |
-|------------------------------------------------------------------------------------------------------------------------------------------|
+| ![Alts](figures/AUC-ROC_comparison_on_6_classification_datasets/AUC-ROC_comparison_on_6_classification_datasets.jpg) |
+|--------------------------------------------------------------------|
 
 </details>
 
@@ -237,23 +237,23 @@ data required for the uncertainty quantification (UQ) experiments, including:
 
 <b>Uncertainty Calibration Curves for ELSO dataset</b>
 
-| ![Alts](figures/Uncertainty%20calibration%20curves%20for%20regression%20datasets/ESOL%20Aleatoric%20Uncertainty.JPG) | ![Alts](figures/Uncertainty%20calibration%20curves%20for%20regression%20datasets/ESOL%20Epistemic%20Uncertainty.JPG) | ![Alts](figures/Uncertainty%20calibration%20curves%20for%20regression%20datasets/ESOL%20Total%20Uncertainty.JPG) |
-|----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| ![Alts](figures/Uncertainty_calibration_curves_for_regression_datasets/AUCO/ESOL_Aleatoric_Uncertainty.JPG) | ![Alts](figures/Uncertainty_calibration_curves_for_regression_datasets/AUCO/ESOL_Epistemic_Uncertainty.JPG) | ![Alts](figures/Uncertainty_calibration_curves_for_regression_datasets/AUCO/ESOL_Total_Uncertainty.JPG) |
+|--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
 
 <b>AUCO Performance improvement on regression datasets:</b>
 
-| ![Alts](figures/AUCO%20comparision%20on%206%20regression%20datasets/AUCO%20comparision%20on%206%20regression%20datasets.JPG) |
-|------------------------------------------------------------------------------------------------------------------------------|
+| ![Alts](figures/AUCO_comparision_on_6_regression_datasets/AUCO_comparision_on_6_regression_datasets.JPG) |
+|--------------------------------------------------------------|
 
 <b>Uncertainty Calibration Curves for Classification dataset</b>
 
-| ![Alts](figures/Uncertainty%20calibration%20curves%20for%20classification%20datasets/BACE.JPG) | ![Alts](figures/Uncertainty%20calibration%20curves%20for%20classification%20datasets/HIV.JPG) | ![Alts](figures/Uncertainty%20calibration%20curves%20for%20classification%20datasets/BBBP.JPG) |
-|------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| ![Alts](figures/Uncertainty_calibration_curves_for_classification_datasets/BACE.JPG) | ![Alts](figures/Uncertainty_calibration_curves_for_classification_datasets/HIV.JPG) | ![Alts](figures/Uncertainty_calibration_curves_for_classification_datasets/BBBP.JPG) |
+|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 
 <b>ECE Performance improvement on classification datasets</b>
 
-| ![Alts](figures/ECE%20comparision%20on%203%20classification%20datasets/ECE%20comparision%20on%203%20classification%20datasets.JPG) |
-|------------------------------------------------------------------------------------------------------------------------------------|
+| ![Alts](figures/ECE_comparision_on_3_classification_datasets/ECE_comparision_on_3_classification_datasets.JPG) |
+|-----------------------------------------------------------------|
 
 </details>
 
@@ -315,8 +315,8 @@ python 3-2-visualize_active.py --data_name freesolv
 
 <b>Performance changes in Active Learning</b>
 
-| ![Alts](figures/Performance%20changes%20in%20Active%20Learning/ESOL%20(Regression%20dataset).JPG) | ![Alts](figures/Performance%20changes%20in%20Active%20Learning/FreeSolv%20(Regression%20dataset).JPG) | ![Alts](figures/Performance%20changes%20in%20Active%20Learning/BACE%20(Classification%20dataset).JPG) | ![Alts](figures/Performance%20changes%20in%20Active%20Learning/BBBP%20(Classification%20dataset).JPG) |
-|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| ![Alts](figures/Performance_changes_in_Active_Learning/delaney.JPG) | ![Alts](figures/Performance_changes_in_Active_Learning/freesolv.JPG) | ![Alts](figures/Performance_changes_in_Active_Learning/bace.JPG) | ![Alts](figures/Performance_changes_in_Active_Learning/bbbp.JPG) |
+|---------------------------------------------------------------------|-----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------|
 
 </details>
 
@@ -352,8 +352,8 @@ python 4-2-visualize_prior.py --data_name delaney --prior CPBayesMPP+Prior --vis
 
 <b>Feature similarity between samples.</b>
 
-| ![Alts](figures/Prior%20prediction%20similarity/ESOL%20Uninformative%20Prior.JPG) | ![Alts](figures/Prior%20prediction%20similarity/ESOL%20Contrastive%20Prior.JPG) |
-|-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| ![Alts](figures/Prior_prediction_similarity/ESOL_Uninformative_Prior.JPG) | ![Alts](figures/Prior_prediction_similarity/ESOL_Contrastive_Prior.JPG) |
+|------------------------------------------------|------------------------------------------------|
 
 </details>
 
@@ -388,8 +388,8 @@ python 4-2-visualize_prior.py --data_name delaney --prior CPBayesMPP+Prior --vis
 
 <b>Feature similarity between samples.</b>
 
-| ![Alts](figures/Prior%20prediction%20similarity/ESOL%20Uninformative%20Prior.JPG) | ![Alts](figures/Prior%20prediction%20similarity/ESOL%20Contrastive%20Prior.JPG) |
-|-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| ![Alts](figures/Prior_prediction_latent/ESOL_Uninformative_Prior.JPG) | ![Alts](figures/Prior_prediction_latent/ESOL_Contrastive_Prior.JPG) |
+|--------------------------------------------|--------------------------------------------|
 
 </details>
 
@@ -406,11 +406,11 @@ Then, Ranking-based method and AUCO are used to measure the OOD detection perfor
 **Step (1):** Train the model using CPBayesMPP and BayesMPP strategies.
 
 ```bash
-python 5-1-ood_train.py --data_name delaney --train_strategy BayesMPP+OOD --epoch 200 --split_type scaffold --split_sizes 0.5 0.2 0.3
+python 5-1-ood_train.py --data_name delaney --train_strategy BayesMPP+OOD --epoch 200 --split_type scaffold --split_sizes 0.5 0.2 0.3 --kl_weight 10
 ```
 
 ```bash
-python 5-1-ood_train.py --data_name delaney --train_strategy CPBayesMPP+OOD --epoch 200 --split_type scaffold --split_sizes 0.5 0.2 0.3
+python 5-1-ood_train.py --data_name delaney --train_strategy CPBayesMPP+OOD --epoch 200 --split_type scaffold --split_sizes 0.5 0.2 0.3 --kl_weight 10
 ```
 
 **Step (2):** Visualize the OOD detection performance.
@@ -426,8 +426,8 @@ python 5-2-visualize_ood_uq.py --data_name delaney --uncertainty_type aleatoric
 
 <b>OOD detection performance improvement.</b>
 
-| ![Alts](figures/OOD%20detection%20Performance%20Improvement/ESOL%20Aleatoric%20Uncertainty.JPG) | ![Alts](figures/OOD%20detection%20Performance%20Improvement/ESOL%20Epistemic%20Uncertainty.JPG) | ![Alts](figures/OOD%20detection%20Performance%20Improvement/ESOL%20Total%20Uncertainty.JPG) |
-|----------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|
+| ![Alts](figures/OOD_detection_Performance_Improvement/ESOL_Aleatoric_Uncertainty.JPG) | ![Alts](figures/OOD_detection_Performance_Improvement/ESOL_Epistemic_Uncertainty.JPG) | ![Alts](figures/OOD_detection_Performance_Improvement/ESOL_Total_Uncertainty.JPG) |
+|----------------------------------------------------------|----------------------------------------------------------|----------------------------------------------------------|
 
 </details>
 

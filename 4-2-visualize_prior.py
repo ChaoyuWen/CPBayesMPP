@@ -65,9 +65,9 @@ def visualize_prior_latent(args: Namespace):
     plt.title(title, fontsize=20)
 
     args.fig_output_path = os.path.join(f'figures',
-                                        f'Prior prediction distinctiveness',
-                                        f'{title}.JPG')
-
+                                        f'Prior_prediction_latent',
+                                        f'{args.print_name[args.data_name]}_Uninformative_Prior.JPG' if args.prior == 'BayesMPP+Prior' else f'{args.print_name[args.data_name]}_Contrastive_Prior.JPG')
+    os.makedirs(os.path.dirname(args.fig_output_path), exist_ok=True)
     plt.savefig(args.fig_output_path, bbox_inches='tight', dpi=600)
 
     plt.show()
@@ -146,9 +146,9 @@ def visualize_prior_similarity(args: Namespace):
     plt.title(title, fontsize=20)
 
     args.fig_output_path = os.path.join(f'figures',
-                                        f'Prior prediction similarity',
-                                        f'{title}.JPG')
-
+                                        f'Prior_prediction_similarity',
+                                        f'{args.print_name[args.data_name]}_Uninformative_Prior.JPG' if args.prior == 'BayesMPP+Prior' else f'{args.print_name[args.data_name]}_Contrastive_Prior.JPG')
+    os.makedirs(os.path.dirname(args.fig_output_path), exist_ok=True)
     plt.savefig(args.fig_output_path, bbox_inches='tight', dpi=600)
 
     plt.show()

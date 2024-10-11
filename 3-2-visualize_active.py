@@ -130,8 +130,8 @@ def visualize_active_learning(args: Namespace):
     plt.title(title, fontsize=20)
 
     fig_output_path = os.path.join(f'figures',
-                                   f'Performance changes in Active Learning',
-                                   f'{title}.JPG')
+                                   f'Performance_changes_in_Active_Learning',
+                                   f'{args.data_name}.JPG')
 
     os.makedirs(os.path.dirname(fig_output_path), exist_ok=True)
 

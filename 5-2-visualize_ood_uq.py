@@ -112,8 +112,8 @@ def visualize_auco_curve(args: Namespace):
     plt.legend(fontsize=23, loc='lower left')
 
     args.fig_output_path = os.path.join(f'figures',
-                                        f'OOD detection Performance Improvement',
-                                        f'{title}.JPG')
+                                        f'OOD_detection_Performance_Improvement',
+                                        f'{args.print_name[args.data_name]}_{args.uncertainty_type.title()}_Uncertainty.JPG')
 
     os.makedirs(os.path.dirname(args.fig_output_path), exist_ok=True)
 
