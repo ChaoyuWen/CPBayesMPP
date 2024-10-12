@@ -211,6 +211,8 @@ data required for the uncertainty quantification (UQ) experiments, including:
   python 2-visualize_uq.py --visualize_type Cv --data_name delaney --split_type random --uncertainty_type aleatoric 
   ```
 
+- The results will be saved in the folder `/figures/Uncertainty_calibration_curves_for_regression_datasets`.
+
 **Step (3):** Plot the uncertainty calibration curves for classification datasets.
 
 - Expected calibration error (ECE): In a binary classification task, the model’s output can serve as both a prediction
@@ -218,6 +220,8 @@ data required for the uncertainty quantification (UQ) experiments, including:
   confidently conclude that it belongs to the positive class. In contrast, if the output is y = 0.55, our confidence in
   the prediction decreases, since the sample might also belong to the negative class. ECE is an uncertainty metric used
   to measure the correlation between uncertainty and predicted error.
+- The results will be saved in the folder `/figures/Uncertainty_calibration_curves_for_classification_datasets`.
+- 
   ```bash
   python 2-visualize_uq.py --visualize_type ece --data_name bace --split_type scaffold
   ```
@@ -291,7 +295,7 @@ Now, train the model by 5 strategies:
   python 3-1-active_train.py --data_name freesolv --train_strategy CPBayesMPP+AL --al_type oracle --epoch 40 --splite_type random --split_size 0.5 0.2 0.3
   ```
 
-**Step (2):** Visualize the active learning curves.
+**Step (2):** Visualize the active learning curves, the results will be saved in the folder `/figures/Performance_changes_in_Active_Learning`.
 
 ```bash
 python 3-2-visualize_active.py --data_name freesolv
@@ -337,7 +341,7 @@ python 4-1-prior_predict.py --data_name delaney --prior CPBayesMPP+Prior --predi
 ```
 
 **Step (2):** Visualize the feature similarity, the results will be saved in the
-folder `/figures/Prior prediction similarity`.
+folder `/figures/Prior_prediction_similarity`.
 
 ```bash
 python 4-2-visualize_prior.py --data_name delaney --prior BayesMPP+Prior --visualize_type similarity
@@ -369,8 +373,7 @@ python 4-1-prior_predict.py --data_name delaney --prior BayesMPP+Prior --predict
 python 4-1-prior_predict.py --data_name delaney --prior CPBayesMPP+Prior --predict_type latent
 ```
 
-**Step (2):** Visualize the feature distinctiveness, the results will be saved in the
-folder `/figures/Prior prediction distinctiveness`.
+**Step (2):** Visualize the feature distinctiveness, the results will be saved in the folder `/figures/Prior_prediction_distinctiveness`.
 
 ```bash
 python 4-2-visualize_prior.py --data_name delaney --prior BayesMPP+Prior --visualize_type latent
